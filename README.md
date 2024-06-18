@@ -41,7 +41,7 @@ Once created, delete all auto created `.cs` files and update the `.csproj` file 
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<IsPackable>false</IsPackable>
 		<LangVersion>latest</LangVersion>
-
+		<ImplicitUsings>enable</ImplicitUsings>
 		<EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
 		<IsRoslynComponent>true</IsRoslynComponent>
 	</PropertyGroup>
@@ -61,11 +61,43 @@ Once created, delete all auto created `.cs` files and update the `.csproj` file 
 </Project>
 ```
 
+### AutoProperty.Sample.csproj
+
+Add a new console application project `AutoProperty.Sample.csproj` that targets the `net8.0` frameork. 
+
+This project will be used to see live updates of the source generator output in our IDEs.
+
+Once created, you'll need to add a project reference to `AutoProperty.csproj`. Since this will be our source generator project, the project reference needs to be updated to include a couple extra flags.
+
+```xml
+<ProjectReference Include="..\AutoProperty\AutoProperty.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false"/>
+```
+- **OutputItemType** informs the compiler that dll created by the project reference should be loaded as a Roslyn analyzer instead of a runtime dependency. 
+- **ReferenceOutputAssembly** will usually be false. If set to true, public types created in the source generator (analyzer) project would be available at runtime. 
+
+Once the project is created, it should look something similar to this:
+
+```xml
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\AutoProperty\AutoProperty.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false"/>
+    </ItemGroup>
+
+</Project>
+```
+
 ### AutoProperty.Runner.csproj
 
 Add a new console application project called `AutoProperty.csproj` that targets the `net8.0` framework.  This project will facilicate
 executing our source generator against a sample set of code. It enables us to execute the generator on demand and work around some inconsitencies
-between differnt .net IDEs and supported operating systems.
+between different .net IDEs and supported operating systems.
 
 Once created, delete all auto created `.cs` files and update the `.csproj` file contents to be the following:
 
@@ -75,6 +107,7 @@ Once created, delete all auto created `.cs` files and update the `.csproj` file 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
         <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
 
     <ItemGroup>

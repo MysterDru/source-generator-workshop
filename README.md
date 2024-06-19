@@ -24,99 +24,14 @@ One, or multiple, of the following:
 
 - .NET 8 SDK
 
-## Hands-On 1 | Create Projects
 
-For the first hand-on section, create a new solution file called `AutoProperty.sln`. Once created, the following projects:
 
-### AutoProperty.csproj
+## Exercises
 
-Add a new class library project called `AutoProperty.csproj` that targets the `netstandard2.0` framework.  This is the project that
-will contain the code for our source generator. 
+The workshop is broken into smaller hands-on exercises to be completed. 
 
-Once created, delete all auto created `.cs` files and update the `.csproj` file contents to be the following:
+Work through each of the following when instructed, or work through them at your own pace.
 
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-	<PropertyGroup>
-		<TargetFramework>netstandard2.0</TargetFramework>
-		<IsPackable>false</IsPackable>
-		<LangVersion>latest</LangVersion>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
-		<IsRoslynComponent>true</IsRoslynComponent>
-	</PropertyGroup>
+- [Exercise 1 | Create Projects & Initial Files](Exercises/Exercise1.md)
 
-	<ItemGroup>
-		<PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4">
-			<PrivateAssets>all</PrivateAssets>
-			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		</PackageReference>
-		<PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.8.0" />
-		<PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.8.0" />
-		<PackageReference Include="Microsoft.Net.Compilers.Toolset" Version="4.8.0">
-		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-		  <PrivateAssets>all</PrivateAssets>
-		</PackageReference>
-	</ItemGroup>
-</Project>
-```
-
-### AutoProperty.Sample.csproj
-
-Add a new console application project `AutoProperty.Sample.csproj` that targets the `net8.0` frameork. 
-
-This project will be used to see live updates of the source generator output in our IDEs.
-
-Once created, you'll need to add a project reference to `AutoProperty.csproj`. Since this will be our source generator project, the project reference needs to be updated to include a couple extra flags.
-
-```xml
-<ProjectReference Include="..\AutoProperty\AutoProperty.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false"/>
-```
-- **OutputItemType** informs the compiler that dll created by the project reference should be loaded as a Roslyn analyzer instead of a runtime dependency. 
-- **ReferenceOutputAssembly** will usually be false. If set to true, public types created in the source generator (analyzer) project would be available at runtime. 
-
-Once the project is created, it should look something similar to this:
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-
-    <PropertyGroup>
-        <OutputType>Exe</OutputType>
-        <TargetFramework>net8.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-    </PropertyGroup>
-    
-    <ItemGroup>
-      <ProjectReference Include="..\AutoProperty\AutoProperty.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false"/>
-    </ItemGroup>
-
-</Project>
-```
-
-### AutoProperty.Runner.csproj
-
-Add a new console application project called `AutoProperty.csproj` that targets the `net8.0` framework.  This project will facilicate
-executing our source generator against a sample set of code. It enables us to execute the generator on demand and work around some inconsitencies
-between different .net IDEs and supported operating systems.
-
-Once created, delete all auto created `.cs` files and update the `.csproj` file contents to be the following:
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-
-    <PropertyGroup>
-        <OutputType>Exe</OutputType>
-        <TargetFramework>net8.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-    </PropertyGroup>
-
-    <ItemGroup>
-        <ProjectReference Include="..\AutoProperty\AutoProperty.csproj" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.8.0" />
-    </ItemGroup>
-
-</Project>
-```
+- [Hands On 2 | Discover Classes & Add Output](Exercises/Exercise2.md)

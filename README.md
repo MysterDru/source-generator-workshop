@@ -34,4 +34,8 @@ Work through each of the following when instructed, or work through them at your
 
 - [Exercise 1 | Create Projects & Initial Files](Exercises/Exercise1.md)
 
-- [Hands On 2 | Discover Classes & Add Output](Exercises/Exercise2.md)
+- [Exercise 2 | Discover Classes & Add Output](Exercises/Exercise2.md)
+
+- [Exercise 3 | Debugging The Generator](Exercises/Exercise3.md)
+
+- [Exercise 4 | Generating a Partial Class](Exercises/Exercise4.md)

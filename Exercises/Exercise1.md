@@ -13,14 +13,18 @@ You can delete any auto-created classes, then replace the contents of the `AutoP
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-    <!-- Generators (and analyzers) need to target netstandard2.0 -->
+        <!-- Generators (and analyzers) need to target netstandard2.0 -->
 		<TargetFramework>netstandard2.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<LangVersion>latest</LangVersion>
-    <!-- Analyzers have some pre-defined rules that you have to follow when using certain APIs. This property enforces build errors for invalid operations in generator code -->
-    <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
-		<!-- Special properties for IDEs to help with debugging -->
-    <IsRoslynComponent>true</IsRoslynComponent>
+
+        <!-- Analyzers have some pre-defined rules that you have to follow when using certain APIs. This property enforces build errors for invalid operations in generator code -->
+        <EnforceExtendedAnalyzerRules>
+            true
+        </EnforceExtendedAnalyzerRules>
+		
+        <!-- Special property for IDEs to help with debugging -->
+        <IsRoslynComponent>true</IsRoslynComponent>
 	</PropertyGroup>
 
   <!-- The following libraries include the source generator interfaces and types we need -->
@@ -56,9 +60,11 @@ Once created, you'll need to add a project reference to `AutoProperty.Generator.
 
 Since this generator is focused on auto-generating interface properties, we need a class and an interface that we can test with.
 
-Create the following on the `AutoProperty.Sample` project; these can be created in whatever file structure you want.
+Create the following on the `AutoProperty.Sample` project; these can be created in whatever file structure you want. For the sake of simplicty this is in a single file.
 
 ```csharp
+/// Models.cs
+///
 namespace AutoProperty.Sample;
 
 public interface IAuditMetadata
@@ -76,11 +82,14 @@ public record Book : IAuditMetadata
 }
 ```
 
+
 ### 4) Create the Source generator class
 
 Lastly, create a new class in `AutoProperty.Generator` called `AutoPropertyGenerator.cs`
 
 ```csharp
+/// AutoPropertyGenerator.cs
+///
 using Microsoft.CodeAnalysis;
 
 namespace AutoProperty.Generator;

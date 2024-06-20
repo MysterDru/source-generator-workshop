@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoProperty.Generator", "AutoProperty.Generator\AutoProperty.Generator.csproj", "{3C2F1E1E-8306-4D34-A0DD-E85F4AA48DA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoProperty.Sample", "AutoProperty.Sample\AutoProperty.Sample.csproj", "{8859A151-F9C5-4CF5-AC7B-5951A9DC73C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C2F1E1E-8306-4D34-A0DD-E85F4AA48DA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C2F1E1E-8306-4D34-A0DD-E85F4AA48DA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C2F1E1E-8306-4D34-A0DD-E85F4AA48DA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C2F1E1E-8306-4D34-A0DD-E85F4AA48DA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8859A151-F9C5-4CF5-AC7B-5951A9DC73C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8859A151-F9C5-4CF5-AC7B-5951A9DC73C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8859A151-F9C5-4CF5-AC7B-5951A9DC73C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8859A151-F9C5-4CF5-AC7B-5951A9DC73C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

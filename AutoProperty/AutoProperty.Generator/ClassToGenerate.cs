@@ -8,5 +8,5 @@ internal record ClassToGenerate
     
     public string ClassName { get; set; }
     
-    public EquatableArray<string> Properties { get; set; }
+    public EquatableArray<PropertyToGenerate> Properties { get; set; }
 }

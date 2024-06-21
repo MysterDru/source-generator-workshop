@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Net.Http.Headers;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -68,7 +69,7 @@ public class AutoPropertyGenerator : IIncrementalGenerator
         {
             NamespaceName = classSymbol.ContainingNamespace.ToDisplayString(),
             ClassName = classSymbol.Name,
-            Properties = unimplementedProperties
+            Properties = new EquatableArray<string>(unimplementedProperties)
         };
     }
 

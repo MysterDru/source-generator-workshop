@@ -1,10 +1,12 @@
+using System.Collections;
+
 namespace AutoProperty.Generator;
 
-public record ClassToGenerate
+internal record ClassToGenerate
 {
     public string NamespaceName { get; set; }
     
     public string ClassName { get; set; }
     
-    public string[] Properties { get; set; }
+    public EquatableArray<string> Properties { get; set; }
 }

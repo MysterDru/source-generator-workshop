@@ -39,3 +39,7 @@ Work through each of the following when instructed, or work through them at your
 - [Exercise 3 | Debugging The Generator](Exercises/Exercise3.md)
 
 - [Exercise 4 | Generating a Partial Class](Exercises/Exercise4.md)
+
+- [Exercise 5 | Working With the Semantic Model](Exercises/Exercise5.md)
+
+- [Exercise 6 | Optimize the Generator with Caching](Exercises/Exercise6.md)

@@ -19,7 +19,7 @@ public partial class Book : IAuditMetadata
 
     public required string Author { get; set; }
 
-    public DateTimeOffset LastUpdated { get; set; }
+    //public DateTimeOffset LastUpdated { get; set; }
 }";
 
     private const string ExpectedFileName = "AutoProperty.Sample.Book.g.cs";
@@ -29,6 +29,7 @@ namespace AutoProperty.Sample
 {
     partial class Book
     {
+        // LastUpdated
     }
 }";
 

@@ -4,7 +4,7 @@ We're going to be starting from a blank solution and creating each project as we
 
 For the first hand-on section, create a new solution file called `AutoProperty.sln`. Once created, complete the following:
 
-### 1) Create the Soruce generator project
+### 1) Create the Source generator project
 
 Create a new class library project called `AutoProperty.Generator.csproj`. Ensure the project targets `netstandard2.0` framework. 
 

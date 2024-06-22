@@ -6,6 +6,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoProperty.Sample", "Auto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoProperty.Tests", "AutoProperty.Tests\AutoProperty.Tests.csproj", "{0D4A6E95-707B-41D2-9B98-943EE3150C6B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoProperty.NugetTest", "AutoProperty.NugetTest\AutoProperty.NugetTest.csproj", "{8B88D577-0A1D-4CFE-B4D1-B59C7596544B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Files", "Files", "{60077CE4-1EE2-4258-9D44-0CDA0A0A14E6}"
+	ProjectSection(SolutionItems) = preProject
+		Nuget.config = Nuget.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +31,9 @@ Global
 		{0D4A6E95-707B-41D2-9B98-943EE3150C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D4A6E95-707B-41D2-9B98-943EE3150C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D4A6E95-707B-41D2-9B98-943EE3150C6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B88D577-0A1D-4CFE-B4D1-B59C7596544B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B88D577-0A1D-4CFE-B4D1-B59C7596544B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B88D577-0A1D-4CFE-B4D1-B59C7596544B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B88D577-0A1D-4CFE-B4D1-B59C7596544B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -2,6 +2,8 @@ namespace AutoProperty.Generator;
 
 internal record PropertyToGenerate
 {
+    public string InterfaceName { get; set; }
+    
     public string Visibility { get; set; }
     
     public string Name { get; set; }

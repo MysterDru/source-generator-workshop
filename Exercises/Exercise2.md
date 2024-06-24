@@ -76,4 +76,4 @@ You can view the generated files from within either Visual Studio IDE by showing
 
 After completing the above steps, you should have a basic file generating for the Book class that is browsable via your IDE.
 
-Next, we'll look at some options for debugging your generator before we beef it up.
+Next, we'll move to [Exercise 3](./Exercise3.md) and look at some options for debugging your generator before we beef it.

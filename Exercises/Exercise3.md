@@ -132,3 +132,9 @@ You may need to reload the solution after adding the profile for the IDE to regi
     Since the generator always runs apart of the  compilation, even before the debugger is attached, the generator may create invalid code that cause the target project to not compile. Since the target project can't compile the debugger can load the generator context.
 
     This issue can be worked around/through by using a Unit Test or Runner project with a manually created syntax tree.
+
+### Wrapping Up
+
+Now that we have a couple methods to debug our generator we can add logic and complexity to the implementation.
+
+[Exercise 4](./Exercise4.md) will focus reading the syntax tree to create the initial shell of our generated classes.

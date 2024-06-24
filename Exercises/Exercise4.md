@@ -121,4 +121,4 @@ If you skipped the update to adding `partial` to `Book`, after building the solu
 
 `Duplicate definition 'AutoProperty.Sample.Book'. Possibly missing keyword 'partial'`
 
-In the next exercise we'll work with the semantic model to get interface metadata and add it to the generated output.
+Next, in [Exercise 5](./Exercise5.md) we'll work with the semantic model to get interface metadata and add it to the generated output.

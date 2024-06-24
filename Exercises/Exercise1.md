@@ -108,6 +108,6 @@ public class AutoPropertyGenerator : IIncrementalGenerator
 
 At this point, you should have a solution structure that resembles the image below. 
 
-From here, we'll hands on #2 and create the intial parts of the generator.
+From here, we'll move to [exercise #2](./Exercise2.md) and create the intial parts of the generator.
 
 <img src="../images/image-1.png" width="350"/>

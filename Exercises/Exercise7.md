@@ -94,3 +94,5 @@ public partial class Models : IModel
 ### Wrapping Up
 
 Success! We've create an incremental generator that auto implements our entity and dto properties. 
+
+We have [1 exercise remaining](./Exercise8.md) that focuses on some remaining optimizations to ensure the generator works when integrated into other solutions.

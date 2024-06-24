@@ -144,3 +144,9 @@ private static void GenerateOutput(SourceProductionContext context, ClassToGener
 ```
 
 Run those unit tests again, or build and insepct the generated files. You should see the same output as before. We've just modified some of the internal ordering of our logic.
+
+## Wrapping Up
+
+We have a fairly complete generator now. What happens if we want to use this outside of the local solution? 
+
+In the [next exercise](./Exercise7.md), we'll take a look at how to package the generator assembly as a nuget pacakge.

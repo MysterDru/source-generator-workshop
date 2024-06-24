@@ -273,4 +273,4 @@ namespace AutoProperty.Sample
 
 We now have a generator implementation that generates missing property implementations on a class! As well as handling multiple interface implementations and more than 1 class declaration.
 
-We're not done yet though, there are some things we need to do to optimize the generator. We'll go through that next.
+We're not done yet though, there are some things we need to do to optimize the generator. We'll go through that next in [Exercise #6](./Exercise6.md).

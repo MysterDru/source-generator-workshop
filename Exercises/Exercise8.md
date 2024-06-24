@@ -178,4 +178,4 @@ Congrats! You've reached the end of the exercises for this workshop.
 
 These exercises have taken you through the full lifecycle of building a source generator and should give some tools to take away to make your own in the future.
 
-We'll talk about other stuff that comes up with any time remaining, but this completes the exercises for today. Well done!
+This completes the exercises for today. Well done! From here, with any time remaining in tthe workshop, we'll talk about any other topics or question the group has.

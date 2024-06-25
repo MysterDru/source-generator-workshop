@@ -1,6 +1,6 @@
-# Getting Started With Source Generators | KCDC 2024
+# Getting Started With Source Generators Workshop
 
-This readme file contains the excercices and code snippets that will be used during the "lab" portions of the workshop session.
+This repository contains the hands-on exercises that will be used during the workshop session.
 
 ## Prerequisites
 

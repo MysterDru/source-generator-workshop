@@ -110,4 +110,4 @@ At this point, you should have a solution structure that resembles the image bel
 
 From here, we'll move to [exercise #2](./Exercise2.md) and create the intial parts of the generator.
 
-<img src="../images/image-1.png" width="350"/>
+<img src="./images/image-1.png" width="350"/>

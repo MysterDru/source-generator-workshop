@@ -15,7 +15,7 @@ Since the code of a source generator runs at compile time rather than runtime, d
 
 <br />
 
-![alt text](../images/debugger.png)
+![alt text](./images/debugger.png)
 
 ### Unit Test / Runner Project
 
@@ -96,7 +96,7 @@ You can now run/debug this test and step through the generator. Make sure to set
 
 ### Live Debugging
 
-Unfortunately, Visual Studio Code doesn't have the ability to perform live debugging of source generators (that I know of). So you'll need to use Rider of VS 2022 for this. Or stick with the unit testing approach above.
+Unfortunately, Visual Studio Code doesn't have the ability to perform live debugging of source generators (that I know of). So you'll need to use Rider or VS 2022 for this. Or stick with the unit testing approach above.
 
 To configure Rider or Visual Studio 2022 to debug generators, add a `launchSettings.json` to the Properties folder of the **AutoProperty.Generator** project:
 

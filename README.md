@@ -1,6 +1,6 @@
 # Getting Started With Source Generators Workshop
 
-This repository contains the hands-on exercises that will be used during the workshop session.
+This repository (and main branch) contains the hands-on exercises that will be used during the workshop session.
 
 ## Prerequisites
 
@@ -34,7 +34,6 @@ One, or multiple, of the following:
 - .NET 8 SDK
   - Preferably version `8.0.302`, but any .net8 sdk version should be sufficient. 
 
-
 ## Exercises
 
 The workshop is broken into smaller hands-on exercises to be completed. 
@@ -56,3 +55,5 @@ Work through each of the following when instructed, or work through them at your
 - [Exercise 7 | Packing the Generator](Exercises/Exercise7.md)
 
 - [Exercise 8 | Final Optimizations](Exercises/Exercise8.md)
+
+The completed demo of the generator solution is available in the [Demos branch](https://github.com/MysterDru/source-generator-workshop/tree/demos).
